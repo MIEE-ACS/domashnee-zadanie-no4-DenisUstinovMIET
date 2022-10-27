@@ -93,7 +93,7 @@ namespace DZ42
             if (line != 0)
                 Console.Write(line);
             else
-                Console.WriteLine("Каждая строка содержит положительный элемент: ");
+                Console.Write("Каждая строка содержит положительный элемент");
         }
     }
 }
