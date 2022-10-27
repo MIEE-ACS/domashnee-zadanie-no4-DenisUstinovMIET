@@ -59,33 +59,7 @@ namespace DZ42
                     Array[k, k] = Array[Array_index_i[k], Array_index_j[k]];
                     Array[Array_index_i[k], Array_index_j[k]] = buf;
                 }
-                /*Console.WriteLine("Значение конечного массива:");
-                for (int i = 0; i < n; i++)
-                {
-                    for (int j = 0; j < n; j++)
-                    {
-                        Console.Write(Array[i, j] + " ");
-                    }
-                    Console.WriteLine();
-                }
-                //Array_max[k] = Array[Array_index_i[k], Array_index_j[k]];
-                //Array[Array_index_i[k], Array_index_j[k]] = min;*/
             }
-
-            /*for (int k = 0; k < n; k++)
-            {
-                Array[Array_index_i[k], Array_index_j[k]] = Array[k,k];
-                Array[k, k] = Array_max[k];
-                Console.WriteLine("Значение конечного массива:");
-                for (int i = 0; i < n; i++)
-                {
-                    for (int j = 0; j < n; j++)
-                    {
-                        Console.Write(Array[i, j] + " ");
-                    }
-                    Console.WriteLine();
-                }
-            }*/
 
             Console.WriteLine("Значение конечного массива:");
             for (int i = 0; i < n; i++)
@@ -96,18 +70,6 @@ namespace DZ42
                 }
                 Console.WriteLine();
             }
-
-            /*Console.WriteLine("Значение начального массива:");
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write(Array_index_i[i] + " " + Array_index_j[i] + " ");
-            }
-            Console.WriteLine();
-            Console.WriteLine("Значение начального массива:");
-            for (int i = 0; i < n ; i++)
-            {
-                Console.Write(Array_max[i] + " ");
-            }*/
         }
     }
 }
