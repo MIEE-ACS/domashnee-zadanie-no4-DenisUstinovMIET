@@ -16,7 +16,7 @@ namespace DZ42
     {
         static void Main(string[] args)
         {
-            int min = 0, max = 10;
+            int min = -10, max = 4;
 
             int n, buf = 0;
             Console.Write("Введите количество элементов массива: ");
@@ -70,6 +70,30 @@ namespace DZ42
                 }
                 Console.WriteLine();
             }
+
+            bool key = true;
+            int line = 0;
+            Console.WriteLine("Номер первой из строк, не содержащих ни одного положительного элемента: ");
+            for (int i = 0; i < n; i++)
+            {
+                key = true;
+                for (int j = 0; j < n; j++)
+                {
+                    if (Array[i, j] > 0)
+                    {
+                        key = false;
+                    }
+                }
+                if (key == true)
+                {
+                    line=(i+1);
+                    break;
+                }
+            }
+            if (line != 0)
+                Console.Write(line);
+            else
+                Console.WriteLine("Каждая строка содержит положительный элемент: ");
         }
     }
 }
